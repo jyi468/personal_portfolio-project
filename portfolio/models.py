@@ -1,4 +1,8 @@
 from django.db import models
+# If adding/editing model for DB
+# python manage.py makemigrations
+# python manage.py migrate
+# python manage.py runserver
 
 
 class Project(models.Model):
