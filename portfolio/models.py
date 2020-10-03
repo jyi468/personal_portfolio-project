@@ -10,3 +10,7 @@ class Project(models.Model):
     description = models.CharField(max_length=250)
     image = models.ImageField(upload_to='portfolio/images/')  # you can upload these photos to a location
     url = models.URLField(blank=True)  # can add blank as a property to anything
+
+    # What shows in a project list on admin page
+    def __str__(self):
+        return self.title
